@@ -1,0 +1,14 @@
+<h1>{{ user$.name }} <a routerLink="/user-albums/{{user$.id}}">Albums</a></h1>
+
+
+<ul>
+  <li><strong>Username: </strong>{{user$.username}}</li>
+  <li><strong>Email: </strong>{{user$.email}}</li>
+  <li><strong>Phone: </strong>{{user$.phone}}</li>
+  <li><strong>Street: </strong>{{user$.address.street}}</li>
+  <li><strong>City: </strong>{{user$.address.city}}</li>
+  <li><strong>Zipcode: </strong>{{user$.address.zipcode}}</li>
+  <li><strong>Company Name: </strong>{{user$.company.name}}</li>
+  <li><strong>Catch Phrase: </strong>{{user$.company.catchPhrase}}</li>
+  <li><strong>Geo: </strong>Latitude {{user$.address.geo.lat}}, Longitude {{user$.address.geo.lng}}</li>
+</ul>

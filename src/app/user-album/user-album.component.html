@@ -1,0 +1,8 @@
+<h1>Albums</h1>
+
+<ul class="albums">
+  <li *ngFor="let album of userAlbums$">
+    <span>{{album.id}}</span>
+    <a routerLink="/photos/{{album.id}}">{{album.title}}</a>
+  </li>
+</ul>
