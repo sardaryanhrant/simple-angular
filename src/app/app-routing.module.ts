@@ -4,6 +4,7 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsComponent } from './posts/posts.component';
 import { UserAlbumComponent } from './user-album/user-album.component';
+import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'user-albums/:id',
     component:UserAlbumComponent
+  },
+  {
+    path: 'album/:id',
+    component:PhotosComponent
   },
 ];
 

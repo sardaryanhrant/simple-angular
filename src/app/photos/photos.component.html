@@ -1,3 +1,8 @@
-<p>
-  photos works!
-</p>
+<h1>Photos</h1>
+
+  <ul class="album-photos">
+    <li *ngFor="let photo of album$">
+      <h3>{{photo.title}}</h3>
+      <img src="{{photo.thumbnailUrl}}" alt="{{photo.title}}">
+    </li>
+  </ul>

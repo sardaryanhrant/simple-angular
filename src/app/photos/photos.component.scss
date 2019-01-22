@@ -1,0 +1,18 @@
+ul.album-photos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    h3{
+        font-size: 0.8rem;
+        height: 16px;
+        overflow: hidden;
+    }
+}
